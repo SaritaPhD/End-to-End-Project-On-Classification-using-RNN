@@ -34,7 +34,6 @@ st.write('Enter a movie review to classify it as positive or negative.')
 user_input = st.text_area('Movie Review')
 
 if st.button('Classify'):
-
     preprocessed_input=preprocess_text(user_input)
 
     ## MAke prediction
