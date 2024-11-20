@@ -4,6 +4,7 @@ import tensorflow as tf
 from tensorflow.keras.datasets import imdb
 from tensorflow.keras.preprocessing import sequence
 from tensorflow.keras.models import load_model
+import streamlit as st
 
 # Load the IMDB dataset word index
 word_index = imdb.get_word_index()
@@ -24,8 +25,6 @@ def preprocess_text(text):
     padded_review = sequence.pad_sequences([encoded_review], maxlen=500)
     return padded_review
 
-
-import streamlit as st
 
 # Streamlit app
 st.title('IMDB Movie Review Sentiment Analysis')
