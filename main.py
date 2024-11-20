@@ -26,7 +26,7 @@ def preprocess_text(text):
 
 
 import streamlit as st
-## streamlit app
+
 # Streamlit app
 st.title('IMDB Movie Review Sentiment Analysis')
 st.write('Enter a movie review to classify it as positive or negative.')
